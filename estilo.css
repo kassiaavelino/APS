@@ -1,0 +1,82 @@
+*, *,:after, *,:before {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/*imagem*/
+body {
+	background-image: url(bg2.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+} 
+
+h1 {
+	font-family: arial;
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 16px;
+	padding-top: 150px;	
+}
+
+.content {
+	padding-bottom: 30px;
+	
+}
+
+.img {
+	text-align: center;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	margin;align-items: center;
+	background-image: linear-gradient(to right, #A8DB92, lightblue, #A8DB92);
+}
+
+#noticias { /*area onde vai ficar os links das notícias*/
+	display: grid;
+	grid-template-columns: 33.3333% 33.3333% 33.3333%;
+	align-items: center;
+	border: dotted;
+	margin: 0 100px;
+}
+
+.img_post { /*area da imagem*/
+	margin: 10px 50px 10px 80px;
+	border: 2px solid #A9A9A9;
+	border-radius: 10px;
+	
+}
+ h4 {
+ 	text-align: center;
+ }
+
+ /*paragrafo com titulo linkado (link da noticia)*/
+ .link_not {
+ 	display: grid;
+ 	grid-template-columns: 33.3333% 33.3333% 33.3333% ;
+ 	border: dotted;
+ 	margin: 0 50px 20px 50px;
+ 	padding: 2px 10px;
+ } 	
+ /* final */
+
+ a { /*para deixar o link de o sublinhado*/
+ 	text-decoration: none;
+ 	color: black;
+ }
+
+ p {
+ 	color: black;
+ 	width: 260px;
+ 	text-align: center;
+ 	font-weight: 900;
+ 	background-color: rgba(255,255,255,0.5);
+ }
