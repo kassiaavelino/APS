@@ -1,65 +1,92 @@
-	<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<link rel="stylesheet" type="text/css" href="menu.css">
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="estilo.css">
 
-	<title>Home</title>
-</head>
-<body>
-	<div id="wrap">
-		<hr>
-		<div class="nav">
-			<div class="img"><a href="inicial.html"><img src="mão.png" alt="Logo" title="logo" width="80" height="80"></a>
-				</div>
-		
-			<div class="menu">
-				<ul class="menu-list">
-					<li class="active"><a href="inicial.html">Home</a></li>
-					<li><a href="pag2.html">Como surgiu ?</a></li>
-					<li><a href="#">Como ajudar?</a></li>
-					<li><a href="#">Contatos</a></li>
-					<li><a href="#">hvdhdhdhdh</a></li>
-				</ul>
-			</div>
+            <title>Home</title>
 
-		</div>
-		
-		<hr>
+            <style>
+                .mySlides {
+                    display: none;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 42px;
+                    width: 775px;
+                    height: 450px;
+                    border-radius: 10px;
+                }
+            </style>
 
-		<div class="content">
-          <br>
-   
-            <br>
-             	<div class="post">
-              		<div id="noticias">
-              			<!-- começo da primeira linha de links -->
-              			<img class="img_post" src="#" width="200" height="200">
-              			<img class="img_post" src="#" width="200" height="200">
-              			<img class="img_post" src="#" width="200" height="200">
-						<!-- titulo da noticia-->
-						<a class="link_not" href="pag2.html"><p>Surgimento do termo Sustentabilidade</p></a>
-              			<a class="link_not" href="#"><p>Titulo 2</p></a>
-              			<a class="link_not" href="#"><p>Titulo 3</p></a>
-              			<!-- final -->
+        </head>
+        <body> <!-- -->
+            <div id="wrap"> <!-- div para toda a página -->
 
-              			<!-- começo da segunda linha de links -->
-              			<img class="img_post" src="#" width="200" height="200">
-              			<img class="img_post" src="#" width="200" height="200">
-              			<img class="img_post" src="#" width="200" height="200">
-              			<!-- titulo da noticia-->
-						<a class="link_not" href="#"><p>Titulo 4</p></a>
-              			<a class="link_not" href="#"><p>Titulo 5</p></a>
-              			<a class="link_not" href="#"><p>Titulo 6</p></a>
-              			<!-- final -->
-              		</div>
-            	</div>
-    	</div>
+                <div class="nav"> <!-- area do menu -->
+                    <div class="img-logo">
+                        <a href="inicial.html">
+                            <img src="logo2.png" alt="Logo EcoSistem" height="80" width="250">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <li class="active"><a href="inicial.html">Home</a></li>
+                            <li><a href="comosurgiu.html">Como Surgiu</a></li>
+                            <li><a href="projetos.html">Projetos</a>
+                            </li>
+                            <li><a href="dicas.html">Dicas</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- fim da area do menu -->
+               
 
-	</div>
+                <div class="content"> <!-- area onde vai todo o conteudo da pagina -->
+                    <br>
+
+                    <div class="post">
+
+                        <div class="slides">
+                            
+                            <img class="mySlides" src="surg.jpg">
+                            <img class="mySlides" src="recicla-praia.jpg">
+                            <img class="mySlides" src="bike_2.jpg">
+
+                        </div>
+
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";                                    
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {myIndex = 1}
+                                x[myIndex-1].style.display = "block";
+                                setTimeout(carousel, 2500); //Change image every 2.5 seconds.
+                            }
+                        
+                        </script>
+
+                    </div>
+
+                </div>
+
+                <footer>
+                    <h3>Desenvolvedores: Alessandro, Guilherme, Luis e Kássia. &#169;
+                    </h3>
+                    <h3 class="align">Atividade Prática Supervisionada : APS</h3>
+                </footer>
+                
+                    
+
+                
+                
 
 
-
-</body>
-</html>
+            </div>
+        </body>
+    </html>

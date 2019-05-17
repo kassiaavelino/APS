@@ -7,76 +7,286 @@
 	line-height: 1.5;
 }
 
-/*imagem*/
-body {
-	background-image: url(bg2.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-} 
+body { /* image de fundo */
+    background-image: url(Imagem1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-h1 {
-	font-family: arial;
-	font-size: 30px;
+/* inicio do menu */
+
+.nav { /* class que pega a imagem e a barra do menu */
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin;align-items: center;
+    background-image:linear-gradient(to right, #A8DB92, lightblue, #A8DB92);
+    top: 0;
+    position: fixed; /* ISSO QUE DEIXOU O MENU FIXOOOOOOOOO*/
+    width: 100%;
+}
+
+.img-logo{ /* logo */
+    margin-left: 25px;
+}
+
+.menu {
+    color: black;
+    background: none;
+}
+
+.menu .menu-list {
+    list-style: none;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.menu > .menu-list > li{
+    float: left;
+    position: relative;
+}
+
+.menu > .menu-list > li > a {
+    align-items: center;
+    padding: 20px;
+    margin: 0 5px;
+    background-color: none;
+}
+
+.menu a:hover {
+    color:white;
+    background: #A9A9A9 0.3;
+    border-bottom: 2px solid black;
+    border-radius: 12px;
+}
+
+.active a { /* classe para deixar o HOME destacado */
+    background-color: #A9A9A9;
+    border-bottom: 2px solid black;
+    border-radius: 12px;
+}
+
+/* fim do menu */
+
+/* inicio da parte do conteudo */
+
+.content {
+    margin-top: 100px;
+}
+
+.post {
+    margin: 10px 80px;
+}
+.main_title {
+    text-align: center;
+    font-family: Caslon, serif;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.atalhos { /* atalhos rapidos para as outra paginas */
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    padding: 0 0.5px;
+    margin: 0 80px;
+}
+
+.limite_img {
+    height: 220px;
+    width: 290px;
+}
+
+.img_atalho {
+    margin: 10px 45px;
+    border: 2px solid #A9A9A9;
+    border-radius: 10px;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+/* paragrafo com titulo linkado */
+
+.link-atalho {
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    border: double gray;
+    border-radius: 5px;    
+    width: 290px;
+}
+/* final dos atalhos */
+
+/* extras do atalho */
+a { /* para tirar o sublinhado do link*/
+    text-decoration: none;
+    color: black;
+}
+
+h4{
+    color: black;
+    font-size:18px;
+    width: 295px;
+    text-align: center;
+
+}
+
+/* rodapé */
+
+footer {
+    background-color: rgb(168, 219, 146, 0.6);
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    padding: 10px 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 h3 {
-	font-size: 16px;
-	padding-top: 150px;	
+    font-size: 16px;
 }
 
-.content {
-	padding-bottom: 30px;
-	
+.align{
+    text-align: right;
 }
 
-.img {
-	text-align: center;
+/*FIM PAGINA INICIAL*/
+
+/*PAGINA PROJETOS*/
+
+.vertical-menu{
+    position: fixed; 
+    width: 150px;
 }
 
-.nav {
-	display: grid;
-	grid-template-columns: 25% 75%;
-	margin;align-items: center;
-	background-image: linear-gradient(to right, #A8DB92, lightblue, #A8DB92);
+.vertical-menu a{
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 25px;
+    margin: 0px 0px 0px 15px;
+    text-decoration: none;
+    float:left;
 }
 
-#noticias { /*area onde vai ficar os links das notícias*/
-	display: grid;
-	grid-template-columns: 33.3333% 33.3333% 33.3333%;
-	align-items: center;
-	border: dotted;
-	margin: 0 100px;
+.vertical-menu a:hover{
+    background-color: #ccc;
 }
 
-.img_post { /*area da imagem*/
-	margin: 10px 50px 10px 80px;
-	border: 2px solid #A9A9A9;
-	border-radius: 10px;
-	
+
+.pesquisa{
+    margin-left: 220px;
+    margin-right: 200px;
+    margin-top: 100px;
 }
- h4 {
- 	text-align: center;
- }
 
- /*paragrafo com titulo linkado (link da noticia)*/
- .link_not {
- 	display: grid;
- 	grid-template-columns: 33.3333% 33.3333% 33.3333% ;
- 	border: dotted;
- 	margin: 0 50px 20px 50px;
- 	padding: 2px 10px;
- } 	
- /* final */
+.pesquisa_projeto{
 
- a { /*para deixar o link de o sublinhado*/
- 	text-decoration: none;
- 	color: black;
- }
+    text-align: justify;
+    margin-left: 50px;   
+}
 
- p {
- 	color: black;
- 	width: 260px;
- 	text-align: center;
- 	font-weight: 900;
- 	background-color: rgba(255,255,255,0.5);
- }
+.main_title-pesquisa {
+    margin-left: 250px;
+    text-align: center;
+    font-family: Caslon, serif;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+/* Botão Voltar TOPO */
+
+.suaclasseaqui{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: inline;
+}
+
+
+/* termino do botão */
+
+.cidades {
+    width: 180px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+/* FIM DA PAGINA DE PROJETOS */
+
+/* PAGINA COMO SURGIU */
+
+.post2 {
+    margin: 1% 12%;
+    margin-top: 0;
+}
+
+.surgir {
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.yellow {
+    float: left;
+    width: 220px;
+    height: 150px;
+    
+    border-radius:200px; 
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+n{
+    color: red;
+    font-size: 24px;
+}
+
+td {
+    margin-left: -20px;
+}
+
+.tabela {
+    margin-bottom: 20px;
+}
+
+b{
+    font-size: 20px;
+}
+
+.img-left{
+    float:left;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.img-right{
+    float:right;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+table {
+    margin-bottom: 20px;
+}
