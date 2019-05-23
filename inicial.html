@@ -1,92 +1,147 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <link rel="stylesheet" type="text/css" href="estilo.css">
+<html>
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <title>Home</title>
 
-            <title>Home</title>
+<style>
+        .mySlides {
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 42px;
+            width: 775px;
+            height: 450px;
+            border-radius: 10px;}
+</style>
+</head>
+<body> <!-- -->
+<div id="wrap"> <!-- div para toda a página -->
 
-            <style>
-                .mySlides {
-                    display: none;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 42px;
-                    width: 775px;
-                    height: 450px;
-                    border-radius: 10px;
-                }
-            </style>
-
-        </head>
-        <body> <!-- -->
-            <div id="wrap"> <!-- div para toda a página -->
-
-                <div class="nav"> <!-- area do menu -->
-                    <div class="img-logo">
-                        <a href="inicial.html">
-                            <img src="logo2.png" alt="Logo EcoSistem" height="80" width="250">
-                        </a>
-                    </div>
-                    <div class="menu">
-                        <ul class="menu-list">
-                            <li class="active"><a href="inicial.html">Home</a></li>
-                            <li><a href="comosurgiu.html">Como Surgiu</a></li>
-                            <li><a href="projetos.html">Projetos</a>
-                            </li>
-                            <li><a href="dicas.html">Dicas</a></li>
-                        </ul>
-                    </div>
-                </div> <!-- fim da area do menu -->
+        <div class="nav"> <!-- area do menu -->
+            <div class="img-logo">
+                <a href="inicial.html">
+                <img src="logo2.png" alt="Logo EcoSistem" height="80" width="250">
+                </a>
+            </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="active"><a href="inicial.html">Home</a></li>
+                <li><a href="comosurgiu.html">Como Surgiu</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="dicas.html">Dicas</a></li>
+            </ul>
+        </div>
+        </div> <!-- fim da area do menu -->
                
 
-                <div class="content"> <!-- area onde vai todo o conteudo da pagina -->
-                    <br>
+    <div class="content"> <!-- area onde vai todo o conteudo da pagina -->
+        <br>
 
-                    <div class="post">
+        <div class="post">
 
-                        <div class="slides">
+        <div class="slides">
                             
-                            <img class="mySlides" src="surg.jpg">
-                            <img class="mySlides" src="recicla-praia.jpg">
-                            <img class="mySlides" src="bike_2.jpg">
+            <img class="mySlides" src="surg.jpg">
+            <img class="mySlides" src="recicla-praia.jpg">
+            <img class="mySlides" src="bike_2.jpg">
+            <img class="mySlides" src="vazamento.jpg">
+            <img class="mySlides" src="aguachuva.jpg">
+            <img class="mySlides" src="lampadas.jpg">
+            <img class="mySlides" src="reciclagem.jpg">
+            <img class="mySlides" src="energia-solar.jpg">
+            <img class="mySlides" src="torneira.png">
+            <img class="mySlides" src="pilhasbaterias.jpg">
+            <img class="mySlides" src="sacolas.jpg">
+            <img class="mySlides" src="lampeco.jpg">
+        </div>
 
-                        </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";                                    
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2500); //Change image every 2.5 seconds.
+                }
+            </script>
 
-                        <script>
-                            var myIndex = 0;
-                            carousel();
+        </div>
 
-                            function carousel() {
-                                var i;
-                                var x = document.getElementsByClassName("mySlides");
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none";                                    
-                                }
-                                myIndex++;
-                                if (myIndex > x.length) {myIndex = 1}
-                                x[myIndex-1].style.display = "block";
-                                setTimeout(carousel, 2500); //Change image every 2.5 seconds.
-                            }
-                        
-                        </script>
+    </div>
+        <div class="post2">
 
-                    </div>
+            <h1 class="main_title">O que é sustentabilidade</h1>
 
-                </div>
+            <p>sustentabilidade refere-se ao princípio da busca pelo equilibrio entre a
+            disponibilidade dos recursos naturais e a exploração deles por parte da sociedade.
+            Ou seja, visa <b>equilibrar a preservação do meio ambiente e o que ele pode oferecer
+            em consonância com a qualidade de vida da população.</b>
+            </p>
+            <br>
+            <p>O termo sustentabilidade surge da necessidade de discussão a respeito da forma como
+                a sociedade vem explorando e usando os recursos naturais, pensando em alternativas
+                de preservá-lo evitando, assim, que esses recursos esgotem-se na natureza. A definição
+                de sustentabilidade está atrelada ao conceito de desenvolvimento sustentável.
+            </p>
+            <p>Atualmente, muito é comentado sobre desenvolvimento sustentável, visto o despertar de
+                consciência da sociedade como um todo para a ideia de que os recursos naturais não são
+                infinitos como muitos pensavam. As inúmeras discussões por parte da comunidade científica
+                acerca das questões relacionadas ao meio ambiente e sua intensa degradação por parte da ação
+                antrópica também colocaram esse termo em evidência.
+            </p><br>
 
-                <footer>
-                    <h3>Desenvolvedores: Alessandro, Guilherme, Luis e Kássia. &#169;
-                    </h3>
-                    <h3 class="align">Atividade Prática Supervisionada : APS</h3>
-                </footer>
-                
-                    
+            <h1 class="main_title"><b>Mas o que é desenvolvimento Sustentável?</b></h1><br>
+            
+            <p>Desenvolvimento sustentável refere-se ao desenvolvimento socioeconômico, político e cultural 
+                atrelado à preservação do meio ambiente. Sendo assim, as práticas capitalistas associadas ao 
+                consumo devem estar em equilíbrio com a sustentabilidade, visando aos avanços no campo social 
+                e econômico sem prejudicar a natureza. É a garantia do suprimento das necessidades da geração 
+                futura por meio da conservação dos recursos naturais.
+            </p><br>
+            <p>Esse termo surgiu no relatório desenvolvido pela Comissão Mundial sobre o Meio Ambiente e o
+                Desenvolvimento apresentado em 1987, conhecido como Relatório de Brundtland ou Nosso Futuro Comum.
+                O relatório traz a definição de desenvolvimento sustentável como:
+            </p><br>
 
-                
-                
+            <p class="destaque">“O desenvolvimento que satisfaz as necessidades presentes, sem comprometer a 
+                capacidade das gerações futuras de suprir suas próprias necessidades.”
+            </p>
+            <br>
+            <p>De acordo com o relatório, para que o desenvolvimento sustentável seja alcançado, é preciso 
+                primeiramente atender às necessidades básicas da sociedade, nos setores da saúde, educação, 
+                no que diz respeito à alimentação e moradia. E para isso, a Organização das Nações Unidas definiu, 
+                ao longo de inúmeras conferências ambientais, diversos objetivos a serem alcançados a fim de que os 
+                países consigam alcançar um desenvolvimento atrelado à sustentabilidade.
+            </p><br>
+            <p>Em 2015, a ONU divulgou uma agenda em que consta dezessete objetivos a serem adotados pelos países 
+                até 2030 para que o desenvolvimento sustentável seja atingido.
+            </p>
+
+        
 
 
-            </div>
-        </body>
-    </html>
+
+
+
+
+
+
+
+
+        </div>
+    <footer>
+        <h3>Desenvolvedores: Alessandro, Guilherme, Luis e Kássia. &#169;</h3>
+        <h3 class="align">Atividade Prática Supervisionada : APS</h3>
+    </footer>
+</div>
+
+</body>
+</html>
