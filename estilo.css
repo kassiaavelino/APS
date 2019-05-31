@@ -93,37 +93,6 @@ body { /* image de fundo */
     font-weight: 500;
 }
 
-.atalhos { /* atalhos rapidos para as outra paginas */
-    display: grid;
-    grid-template-columns: 33.3333% 33.3333% 33.3333%;
-    padding: 0 0.5px;
-    margin: 0 80px;
-}
-
-.limite_img {
-    height: 220px;
-    width: 290px;
-}
-
-.img_atalho {
-    margin: 10px 45px;
-    border: 2px solid #A9A9A9;
-    border-radius: 10px;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-}
-
-/* paragrafo com titulo linkado */
-
-.link-atalho {
-    display: grid;
-    grid-template-columns: 33.3333% 33.3333% 33.3333%;
-    border: double gray;
-    border-radius: 5px;    
-    width: 290px;
-}
-/* final dos atalhos */
 
 /* extras do atalho */
 a { /* para tirar o sublinhado do link*/
@@ -299,3 +268,26 @@ b{
 table {
     margin-bottom: 20px;
 }
+
+/* Página desenvolvedores */
+
+.devs{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+figure{
+    text-align: center;
+}
+.links{
+    margin: 5px;
+}
+
+.links a{
+    border: 1px
+    color: white;
+    padding: 2px;
+    
+}
+
